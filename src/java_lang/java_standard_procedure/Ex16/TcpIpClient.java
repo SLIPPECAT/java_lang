@@ -28,8 +28,8 @@ public class TcpIpClient {
             dis.close();
             socket.close();
             System.out.println("연결이 종료되었습니다.");
-        } catch(IOException ie) { ie.printStackTrace();
         } catch(ConnectException ce) { ce.printStackTrace();
+        } catch(IOException ie) { ie.printStackTrace();
         } catch(Exception e) {e.printStackTrace();}
     }
 }
